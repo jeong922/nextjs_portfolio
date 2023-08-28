@@ -8,5 +8,5 @@
 - 화면 오른쪽 상단에는 Geolocation과 openweathermap을 이용해 현재 도시의 날씨와 기온을 나타내도록 구현하였다.
 - 중앙에는 new Date()를 이용해 현재 시간이 표시되도록 구현하였다.
 - 중앙 현재 시간 아래에는 로컬스토리지를 이용해 사용자 이름을 입력하면 "Hello 사용자이름" 형태로 화면에 나타나고 로그아웃 버튼을 누르면 다시 사용자 이름 입력창이 나오도록 구현하였다.
-  ![main](/postsImage/MomentumClone/main.png)
-  ![username](/postsImage/MomentumClone/username.png)
+  ![main](/projectsImage/MomentumClone/main.png)
+  ![username](/projectsImage/MomentumClone/username.png)

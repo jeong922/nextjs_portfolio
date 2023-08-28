@@ -3,7 +3,6 @@ type Props = {
 };
 
 export default function CategoryUI({ category }: Props) {
-  console.log(category);
   return (
     <>
       {category === 'React' && (

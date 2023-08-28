@@ -14,5 +14,5 @@ React, PostCSS 사용법 복습
 - 왼쪽 상단 🌞 또는 🌙 모양 버튼을 누르면 다크모드 또는 라이트모드로 변경 된다.
 - 아래 gif는 동작하는 것을 보여준다. ~~화질이 좀 구리다..~~
 
-  ![동작](/postsImage/TodoList/todo.gif)
-  ![다크, 라이트 모드](/postsImage/TodoList/theme.gif)
+  ![동작](/projectsImage/TodoList/todo.gif)
+  ![다크, 라이트 모드](/projectsImage/TodoList/theme.gif)
