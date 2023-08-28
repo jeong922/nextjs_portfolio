@@ -27,7 +27,7 @@ export default function Header() {
     >
       <div className='h-16 flex justify-between px-6 items-center max-w-screen-2xl mx-auto'>
         <Link className='text-2xl font-semibold' href='/'>
-          Joeng
+          Jeong
         </Link>
         <nav>
           <Link

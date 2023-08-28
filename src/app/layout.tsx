@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <Header />
-        <main>{children}</main>
+        <div className='max-w-screen-2xl mx-auto'>
+          <main>{children}</main>
+        </div>
         <footer></footer>
       </body>
     </html>
