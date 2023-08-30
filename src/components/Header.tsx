@@ -9,7 +9,7 @@ export default function Header() {
   const [isScroll, setIsScroll] = useState(false);
 
   const getScrollPosition = () => {
-    window.scrollY >= 150 ? setIsScroll(true) : setIsScroll(false);
+    window.scrollY >= 64 ? setIsScroll(true) : setIsScroll(false);
   };
 
   useEffect(() => {

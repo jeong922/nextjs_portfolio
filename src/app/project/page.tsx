@@ -9,7 +9,7 @@ export default async function ProjectsPage() {
   ];
 
   return (
-    <section>
+    <section className='pt-16'>
       <FilterProject projects={projects} categories={categories} />
     </section>
   );
