@@ -29,7 +29,7 @@
     "date": "2021-11-28",
     "category": ["JS"],
     "path": "MomentumClone",
-    "featured": true
+    "featured": false
   },
   {
     "title": "J Shop(쇼핑몰 만들기)",

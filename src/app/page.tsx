@@ -1,3 +1,11 @@
-export default function Home() {
-  return <section>main</section>;
+import CarouselProjects from '@/components/CarouselProjects';
+import { getNewProjects } from '@/service/project';
+
+export default async function HomePage() {
+  const projects = await getNewProjects();
+  return (
+    <div>
+      <CarouselProjects projects={projects} />
+    </div>
+  );
 }

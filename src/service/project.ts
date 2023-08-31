@@ -44,3 +44,7 @@ export async function getProjectData(fileName: string): Promise<ProjectData> {
   const content = await readFile(filePath, 'utf-8');
   return { ...project, content, next, prev };
 }
+
+export async function getNewProjects(): Promise<Project[]> {
+  return getAllProject().then((projects) => projects.slice(0, 4));
+}
