@@ -2,6 +2,8 @@
 
 ## [클릭😊](https://guileless-kheer-270589.netlify.app/)
 
+## [Github](https://github.com/jeong922/youtube_clone)
+
 ### 목적
 
 React 18, React Router, React Query , Tailwind, YouTube Data API, Axios 등 사용법 익히기

@@ -2,6 +2,8 @@
 
 ## [클릭😊](https://nextjs-shoppy.vercel.app)
 
+## [Github](https://github.com/jeong922/nextjs_shoppy)
+
 ### 제작 기간
 
 2023-07-14 ~ 2023-08-01

@@ -2,6 +2,8 @@
 
 ## [클릭😊](https://fabulous-alfajores-b30029.netlify.app)
 
+## [Github](https://github.com/jeong922/react-masterclass-nomflix)
+
 - 배포는 Netlify를 사용하였다.
 
 ### 목적
