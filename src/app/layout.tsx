@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '@/components/Footer';
+import TopButton from '@/components/TopButton';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <div className='relative max-w-screen-2xl mx-auto min-h-screen'>
           <main>{children}</main>
         </div>
+        <TopButton />
         <Footer />
       </body>
     </html>
