@@ -22,6 +22,7 @@ Next.js, Tailwind, Sanity, Vercel, SWR, NextAuth 등 사용법 익히기 및 간
 ### 구성
 
 ❗ 미적 센스가 없어서 전체적 디자인이 좀 구리다..😅
+![로그인페이지](/projectsImage/JShop/홈.gif)
 
 - **로그인**
 
