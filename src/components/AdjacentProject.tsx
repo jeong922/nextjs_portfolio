@@ -23,16 +23,16 @@ export default function AdjacentProject({ project, type }: Props) {
       />
       <div className='absolute flex items-center justify-around w-full px-3 text-white -translate-x-1/2 -translate-y-1/2 sm:px-8 group top-1/2 left-1/2'>
         {type === 'prev' && (
-          <BsArrowLeftCircle className='m-4 text-3xl opacity-70 group-hover:opacity-100 sm:text-5xl' />
+          <BsArrowLeftCircle className='m-2 text-3xl opacity-70 group-hover:opacity-100 sm:text-5xl' />
         )}
         <div className='w-full text-center'>
           <h3 className='text-sm font-bold sm:text-2xl'>{project.title}</h3>
-          <p className='text-xs font-bold sm:text-sm opacity-70 line-clamp-2'>
+          <p className='text-[0.5rem] font-bold sm:text-sm opacity-70 line-clamp-2'>
             {project.description}
           </p>
         </div>
         {type === 'next' && (
-          <BsArrowRightCircle className='m-4 text-3xl opacity-70 group-hover:opacity-100 sm:text-5xl' />
+          <BsArrowRightCircle className='m-2 text-3xl opacity-70 group-hover:opacity-100 sm:text-5xl' />
         )}
       </div>
     </Link>
