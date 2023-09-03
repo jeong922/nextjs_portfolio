@@ -32,9 +32,11 @@ export default function Header() {
         <nav>
           <Link
             href='/project'
-            className={`${pathName === '/project' && 'font-semibold'}`}
+            className={`${
+              pathName === '/project' && 'font-semibold text-rose-300'
+            } text-neutral-500`}
           >
-            프로젝트
+            Project
           </Link>
         </nav>
       </div>
