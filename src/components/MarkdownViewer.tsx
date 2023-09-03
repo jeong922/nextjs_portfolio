@@ -41,8 +41,17 @@ export default function MarkdownViewer({ content }: Props) {
           ></Image>
         ),
         a: ({ ...props }) => <a {...props} className='text-blue-600' />,
+        h1: ({ ...props }) => (
+          <h1 {...props} className='dark:text-darkModeText' />
+        ),
         h2: ({ ...props }) => (
           <h2 {...props} className='dark:text-darkModeText' />
+        ),
+        h3: ({ ...props }) => (
+          <h3 {...props} className='dark:text-darkModeText' />
+        ),
+        strong: ({ ...props }) => (
+          <h3 {...props} className='dark:text-darkModeText' />
         ),
       }}
     >

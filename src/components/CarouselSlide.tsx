@@ -30,7 +30,7 @@ export default function CarouselSlide({ children }: Props) {
   return (
     <Carousel
       responsive={responsive}
-      autoPlaySpeed={2000}
+      autoPlaySpeed={3000}
       autoPlay
       infinite
       containerClass='flex w-full gap-2'

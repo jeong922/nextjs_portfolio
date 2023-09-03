@@ -11,7 +11,7 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   return (
     <Link href={`/project/${project.path}`} key={project.path}>
-      <div className='overflow-hidden duration-300 ease-in-out rounded-md shadow-md cursor-pointer dark:bg-slate-800 dark:shadow-zinc-900 group'>
+      <div className='overflow-hidden duration-300 ease-in-out rounded-md shadow-md cursor-pointer dark:bg-slate-800 group dark:shadow-neutral-900'>
         <Image
           className='w-full duration-300 ease-linear transform aspect-video group-hover:scale-105'
           src={`/images/projects/${project.path}.png`}

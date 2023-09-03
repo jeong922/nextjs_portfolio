@@ -10,7 +10,9 @@ export default function Categories({ categories, selected, onClick }: Props) {
       {...categories.map((category) => (
         <li
           className={`${
-            selected === category ? 'text-rose-300' : 'text-neutral-500'
+            selected === category
+              ? 'text-rose-300'
+              : 'text-neutral-500 dark:text-darkModeText'
           }  cursor-pointer`}
           key={category}
           onClick={() => onClick(category)}

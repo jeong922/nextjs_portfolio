@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '@/components/Footer';
 import TopButton from '@/components/TopButton';
+import { DarkModeProvider } from '@/context/ThemeContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,15 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>
-        <Header />
-        <div className='relative max-w-screen-2xl mx-auto min-h-screen'>
-          <main>{children}</main>
-        </div>
-        <TopButton />
-        <Footer />
-      </body>
+    <html lang='en' className={inter.className}>
+      <DarkModeProvider>
+        <body className='dark:bg-darkbg'>
+          <Header />
+          <div className='relative max-w-screen-2xl mx-auto min-h-screen'>
+            <main>{children}</main>
+          </div>
+          <TopButton />
+          <Footer />
+        </body>
+      </DarkModeProvider>
     </html>
   );
 }
