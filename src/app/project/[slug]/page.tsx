@@ -13,7 +13,7 @@ type Props = {
 export default async function ProjectPage({ params: { slug } }: Props) {
   const project = await getProjectData(slug);
   return (
-    <article className='w-full p-4 mb-4 overflow-hidden bg-gray-100 rounded-md dark:bg-slate-800'>
+    <article className='w-full p-4 mb-4 overflow-hidden bg-gray-100 rounded-md dark:bg-slate-800 max-w-screen-2xl mx-auto'>
       <div className='relative flex items-center justify-center'>
         <Image
           className='w-full mb-4 rounded-md shadow-lg h-1/5 max-h-[300px] object-cover brightness-75'
