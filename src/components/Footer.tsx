@@ -2,7 +2,7 @@ import { AiFillGithub } from 'react-icons/ai';
 
 export default function Footer() {
   return (
-    <footer className='relative py-3 transform translate-y-full bg-gray-200 px-7 dark:bg-slate-900'>
+    <footer className='relative py-3 transform translate-y-full bg-rose-50 px-7 dark:bg-slate-900'>
       <div className='mx-auto max-w-screen-2xl relative top-0'>
         <div className='flex justify-between mb-1'>
           <p className='text-xs text-gray-500 dark:text-gray-300'>
