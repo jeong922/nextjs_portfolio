@@ -27,7 +27,7 @@ export default function Header() {
       }`}
     >
       <div className='h-16 flex justify-between px-6 items-center max-w-screen-2xl mx-auto'>
-        <Link className='text-2xl font-semibold dark:text-neutral-50' href='/'>
+        <Link className='text-2xl font-semibold text-neutral-50' href='/'>
           Jeong
         </Link>
         <div className='flex gap-x-4'>
@@ -38,7 +38,7 @@ export default function Header() {
               className={`${
                 pathName === '/project' &&
                 'font-semibold text-rose-300 dark:text-rose-300'
-              } text-neutral-500 dark:text-darkModeText`}
+              } text-darkModeText`}
             >
               Project
             </Link>
