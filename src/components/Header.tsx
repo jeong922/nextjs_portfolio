@@ -27,7 +27,14 @@ export default function Header() {
       }`}
     >
       <div className='h-16 flex justify-between px-6 items-center max-w-screen-2xl mx-auto'>
-        <Link className='text-2xl font-semibold text-neutral-50' href='/'>
+        <Link
+          className={`${
+            isScroll ? 'text-black dark:text-darkModeText' : 'bg-transparent'
+          } ${
+            pathName === '/' && 'text-neutral-50'
+          } text-2xl font-semibold dark:text-neutral-50`}
+          href='/'
+        >
           Jeong
         </Link>
         <div className='flex gap-x-4'>
@@ -36,9 +43,15 @@ export default function Header() {
             <Link
               href='/project'
               className={`${
+                isScroll
+                  ? 'text-black dark:text-darkModeText'
+                  : 'bg-transparent'
+              } ${
                 pathName === '/project' &&
                 'font-semibold text-rose-300 dark:text-rose-300'
-              } text-darkModeText`}
+              } ${
+                pathName === '/' && 'text-darkModeText'
+              } dark:text-darkModeText`}
             >
               Project
             </Link>
