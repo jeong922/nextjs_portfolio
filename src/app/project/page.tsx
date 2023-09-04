@@ -9,7 +9,7 @@ export default async function ProjectsPage() {
   ];
 
   return (
-    <section className='pt-16'>
+    <section className='pt-16 max-w-screen-2xl mx-auto '>
       <FilterProject projects={projects} categories={categories} />
     </section>
   );

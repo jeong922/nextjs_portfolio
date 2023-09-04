@@ -23,7 +23,7 @@ export default function RootLayout({
       <DarkModeProvider>
         <body className='dark:bg-darkbg'>
           <Header />
-          <div className='relative max-w-screen-2xl mx-auto min-h-screen'>
+          <div className='relative min-h-screen'>
             <main>{children}</main>
           </div>
           <TopButton />

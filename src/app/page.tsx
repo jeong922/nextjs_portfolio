@@ -5,7 +5,7 @@ import { getNewProjects } from '@/service/project';
 export default async function HomePage() {
   const projects = await getNewProjects();
   return (
-    <div>
+    <div className='relative -top-16'>
       <HomeTitle />
       <CarouselProjects projects={projects} />
     </div>
