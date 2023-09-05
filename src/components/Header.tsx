@@ -44,12 +44,7 @@ export default function Header() {
             href='https://github.com/jeong922'
             className={`${
               isScroll ? 'text-black dark:text-darkModeText' : 'bg-transparent'
-            } ${
-              pathName === '/project' &&
-              'font-semibold text-rose-300 dark:text-rose-300'
-            } ${
-              pathName === '/' && 'text-darkModeText'
-            } dark:text-darkModeText`}
+            }${pathName === '/' && 'text-darkModeText'} dark:text-darkModeText`}
           >
             <AiFillGithub className='h-6 w-6' />
           </a>
