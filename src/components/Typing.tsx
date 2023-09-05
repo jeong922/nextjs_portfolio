@@ -11,7 +11,7 @@ const nunito = Nunito({
 export default function Typing() {
   return (
     <div
-      className={`${nunito.className} text-5xl text-center text-darkModeText font-semibold absolute w-full h-full top-0 flex items-center justify-center`}
+      className={`${nunito.className} text-5xl text-center text-darkModeText font-bold absolute w-full h-full top-0 flex items-center justify-center`}
     >
       <TypeIt
         getBeforeInit={(instance) => {

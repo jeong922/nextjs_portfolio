@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import ThemeModeButton from './ThemeModeButton';
+import { AiFillGithub } from 'react-icons/ai';
 
 // TODO : 스크롤 이벤트 처리하기
 export default function Header() {
@@ -39,6 +40,19 @@ export default function Header() {
         </Link>
         <div className='flex gap-x-4'>
           <ThemeModeButton />
+          <a
+            href='https://github.com/jeong922'
+            className={`${
+              isScroll ? 'text-black dark:text-darkModeText' : 'bg-transparent'
+            } ${
+              pathName === '/project' &&
+              'font-semibold text-rose-300 dark:text-rose-300'
+            } ${
+              pathName === '/' && 'text-darkModeText'
+            } dark:text-darkModeText`}
+          >
+            <AiFillGithub className='h-6 w-6' />
+          </a>
           <nav>
             <Link
               href='/project'
