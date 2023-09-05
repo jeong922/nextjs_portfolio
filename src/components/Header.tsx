@@ -30,10 +30,12 @@ export default function Header() {
       <div className='h-16 flex justify-between px-6 items-center max-w-screen-2xl mx-auto'>
         <Link
           className={`${
-            isScroll ? 'text-black dark:text-darkModeText' : 'bg-transparent'
-          } ${
-            pathName === '/' && 'text-neutral-50'
-          } text-2xl font-semibold dark:text-neutral-50`}
+            isScroll
+              ? 'text-black dark:text-darkModeText'
+              : pathName === '/'
+              ? 'text-neutral-50'
+              : 'text-black dark:text-darkModeText'
+          } text-2xl font-semibold`}
           href='/'
         >
           Jeong
@@ -43,8 +45,12 @@ export default function Header() {
           <a
             href='https://github.com/jeong922'
             className={`${
-              isScroll ? 'text-black dark:text-darkModeText' : 'bg-transparent'
-            }${pathName === '/' && 'text-darkModeText'} dark:text-darkModeText`}
+              isScroll
+                ? 'text-black dark:text-darkModeText'
+                : pathName === '/'
+                ? 'text-darkModeText'
+                : 'text-black dark:text-darkModeText'
+            }`}
           >
             <AiFillGithub className='h-6 w-6' />
           </a>
@@ -54,13 +60,13 @@ export default function Header() {
               className={`${
                 isScroll
                   ? 'text-black dark:text-darkModeText'
-                  : 'bg-transparent'
+                  : pathName === '/'
+                  ? 'text-darkModeText'
+                  : 'text-black dark:text-darkModeText'
               } ${
                 pathName === '/project' &&
                 'font-semibold text-rose-300 dark:text-rose-300'
-              } ${
-                pathName === '/' && 'text-darkModeText'
-              } dark:text-darkModeText`}
+              }`}
             >
               Project
             </Link>
