@@ -2,7 +2,7 @@ import Typing from './Typing';
 
 export default function HomeTitle() {
   return (
-    <div className='py-16 relative bg-[#e78892] h-[60vh] min-h-[400px] mb-10'>
+    <div className='py-16 relative bg-[#e78892] h-[60vh] min-h-[400px] mb-20'>
       <div className={`custom-shape-divider-bottom-1693811568`}>
         <svg
           data-name='Layer 1'

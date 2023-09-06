@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: Props) {
           <div className='flex gap-x-2'>
             {project.category.map((item, index) => (
               <div key={index}>
-                <CategoryUI category={item} />
+                <CategoryUI category={item} size='sm' />
               </div>
             ))}
           </div>
