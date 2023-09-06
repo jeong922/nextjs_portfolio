@@ -23,8 +23,8 @@ export default async function ProjectPage({ params: { slug } }: Props) {
           height={420}
         />
         <div className='absolute flex flex-col items-center justify-center text-white'>
-          <h2 className='text-4xl font-bold'>{project.title}</h2>
-          <p className='font-bold opacity-70 line-clamp-2'>
+          <h2 className='text-4xl font-bold mb-2'>{project.title}</h2>
+          <p className='font-bold text-neutral-300 line-clamp-2'>
             {project.description}
           </p>
         </div>

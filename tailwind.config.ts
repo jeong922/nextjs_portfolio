@@ -14,7 +14,7 @@ const config: Config = {
         JS: '#f8c832',
         TS: '#3178c6',
         NextJS: 'black',
-        darkbg: 'rgb(2, 6, 23)',
+        darkbg: '#0A102B',
         darkModeText: 'rgb(229, 229, 229)',
       },
     },
