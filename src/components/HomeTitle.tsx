@@ -1,10 +1,9 @@
 import Typing from './Typing';
 
-//bg-[#e78892]
 export default function HomeTitle() {
   return (
     <div className='py-16 relative h-[60vh] min-h-[400px] mb-20 bg-gradient-to-tr from-[#665999] via-[#e78892] via-30% to-[#39025e] to-90%'>
-      <div className={`custom-shape-divider-bottom-1693811568`}>
+      <div className='custom-shape-divider-bottom-1693996646'>
         <svg
           data-name='Layer 1'
           xmlns='http://www.w3.org/2000/svg'
@@ -17,7 +16,7 @@ export default function HomeTitle() {
           ></path>
         </svg>
       </div>
-      <Typing />
+      <Typing typingText={`Hi, I'm Jeong!`} />
     </div>
   );
 }

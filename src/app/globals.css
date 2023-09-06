@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html.dark .custom-shape-divider-bottom-1693811568 .shape-fill {
-  fill: #0a102b;
-}
-
-.custom-shape-divider-bottom-1693811568 {
+.custom-shape-divider-bottom-1693996646 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -16,13 +12,13 @@ html.dark .custom-shape-divider-bottom-1693811568 .shape-fill {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1693811568 svg {
+.custom-shape-divider-bottom-1693996646 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 127px;
+  width: calc(130% + 1.3px);
+  height: 233px;
 }
 
-.custom-shape-divider-bottom-1693811568 .shape-fill {
-  fill: #ffffff;
+.custom-shape-divider-bottom-1693996646 .shape-fill {
+  fill: rgba(255, 255, 255, 0.22);
 }

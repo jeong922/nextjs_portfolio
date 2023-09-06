@@ -17,6 +17,19 @@ const config: Config = {
         darkbg: '#0A102B',
         darkModeText: 'rgb(229, 229, 229)',
       },
+      keyframes: {
+        blink: {
+          '0%, 100%': {
+            borderRight: '3px solid rgb(229, 229, 229)',
+          },
+          '50%': {
+            borderRight: '3px solid transparent',
+          },
+        },
+      },
+      animation: {
+        blink: 'blink 1.2s infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
