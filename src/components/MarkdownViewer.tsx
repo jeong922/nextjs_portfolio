@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Image from 'next/image';
+import React from 'react';
 
 type Props = {
   content: string;
@@ -53,6 +54,7 @@ export default function MarkdownViewer({ content }: Props) {
         strong: ({ ...props }) => (
           <h3 {...props} className='dark:text-darkModeText' />
         ),
+        p: React.Fragment,
       }}
     >
       {content}
