@@ -9,7 +9,7 @@ type Props = {
 export default function CarouselProjects({ projects }: Props) {
   return (
     <section className='p-4 max-w-screen-2xl mx-auto '>
-      <h2 className='text-xl text-neutral-700 font-semibold dark:text-darkModeText px-4 mb-2'>
+      <h2 className='text-xl text-neutral-700 font-semibold dark:text-darkModeText p-4 border-b-2 border-b-neutral-300 mb-8'>
         새로운 프로젝트
       </h2>
       <CarouselSlide>
