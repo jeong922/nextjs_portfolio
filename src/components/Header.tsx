@@ -54,7 +54,7 @@ export default function Header() {
           >
             <AiFillGithub className='h-6 w-6' />
           </a>
-          <nav>
+          <nav className='flex gap-x-4'>
             <Link
               href='/project'
               className={`${
@@ -69,6 +69,21 @@ export default function Header() {
               }`}
             >
               Project
+            </Link>
+            <Link
+              href='/about'
+              className={`${
+                isScroll
+                  ? 'text-black dark:text-darkModeText'
+                  : pathName === '/'
+                  ? 'text-darkModeText'
+                  : 'text-black dark:text-darkModeText'
+              } ${
+                pathName === '/about' &&
+                'font-semibold text-rose-300 dark:text-rose-300'
+              }`}
+            >
+              About
             </Link>
           </nav>
         </div>
