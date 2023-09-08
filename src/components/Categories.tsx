@@ -6,7 +6,7 @@ type Props = {
 
 export default function Categories({ categories, selected, onClick }: Props) {
   return (
-    <ul className='flex w-full gap-x-5 p-4 border-b-2 border-b-neutral-300 mb-8'>
+    <ul className='flex w-full gap-x-5 p-4 border-b-2 border-b-neutral-300 mb-8 font-semibold'>
       {...categories.map((category) => (
         <li
           className={`${
