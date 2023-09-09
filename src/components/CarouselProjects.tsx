@@ -1,6 +1,7 @@
 import { Project } from '@/service/project';
 import ProjectCard from './ProjectCard';
 import CarouselSlide from './CarouselSlide';
+import TitleUI from './UI/TitleUI';
 
 type Props = {
   projects: Project[];
@@ -9,9 +10,7 @@ type Props = {
 export default function CarouselProjects({ projects }: Props) {
   return (
     <section className='p-4 max-w-screen-2xl mx-auto '>
-      <h2 className='text-xl text-neutral-700 font-semibold dark:text-darkModeText p-4 border-b-2 border-b-neutral-300 mb-8'>
-        새로운 프로젝트
-      </h2>
+      <TitleUI text='새로운 프로젝트' />
       <CarouselSlide>
         {projects.map((project) => (
           <div key={project.path} className='p-4'>

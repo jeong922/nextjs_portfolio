@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function AboutPage() {
   return (
-    <div>
+    <section>
       <About />
-    </div>
+    </section>
   );
 }
