@@ -1,6 +1,7 @@
 import AdjacentProject from '@/components/AdjacentProject';
 import ProjectContent from '@/components/ProjectContent';
 import { getProjectData } from '@/service/project';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
 
@@ -36,4 +37,14 @@ export default async function ProjectPage({ params: { slug } }: Props) {
       </section>
     </article>
   );
+}
+
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  const project = await getProjectData(slug);
+  return {
+    title: `${project.title}`,
+    description: `${project?.title} 상세 정보`,
+  };
 }

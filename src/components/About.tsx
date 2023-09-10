@@ -8,14 +8,17 @@ export default function About() {
       <TitleUI text='About' />
 
       <div className='p-4 rounded-md dark:text-darkModeText text-lg flex flex-col items-center justify-center'>
-        <a
-          className='hover:text-rose-300 flex items-center'
-          href='https://github.com/jeong922'
-        >
-          <AiFillGithub />
-          <span className='ml-2'>jeong922</span>
-        </a>
-        <Skills />
+        <div className='flex flex-col justify-center items-center p-4'>
+          <span className='text-xl font-semibold mb-4'>GitHub</span>
+          <a
+            className='hover:text-rose-300 flex items-center'
+            href='https://github.com/jeong922'
+          >
+            <AiFillGithub />
+            <span className='ml-2'>jeong922</span>
+          </a>
+        </div>
+        {/* <Skills /> */}
       </div>
     </section>
   );

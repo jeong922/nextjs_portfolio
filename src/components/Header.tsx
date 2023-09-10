@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import ThemeModeButton from './ThemeModeButton';
 import { AiFillGithub } from 'react-icons/ai';
 
-// TODO : 스크롤 이벤트 처리하기
 export default function Header() {
   const pathName = usePathname();
   const [isScroll, setIsScroll] = useState(false);
