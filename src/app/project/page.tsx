@@ -24,6 +24,7 @@ export default async function ProjectsPage() {
           alt='image'
           width={650}
           height={420}
+          priority
         />
         <div className='absolute text-darkModeText w-full h-full p-20 flex items-center'>
           <h2 className='text-4xl font-bold mb-2'>Project</h2>

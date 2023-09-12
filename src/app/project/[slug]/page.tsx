@@ -22,6 +22,7 @@ export default async function ProjectPage({ params: { slug } }: Props) {
           alt={project.title}
           width={650}
           height={420}
+          priority
         />
         <div className='absolute flex flex-col items-center justify-center text-white'>
           <h2 className='text-4xl font-bold mb-2'>{project.title}</h2>
