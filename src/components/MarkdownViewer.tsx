@@ -35,6 +35,7 @@ export default function MarkdownViewer({ content }: Props) {
         },
         img: (image) => (
           <Image
+            className='bg-neutral-300'
             src={image.src || ''}
             alt={image.alt || ''}
             width={500}
