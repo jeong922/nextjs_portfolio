@@ -1,6 +1,6 @@
 import AdjacentProject from '@/components/AdjacentProject';
 import ProjectContent from '@/components/ProjectContent';
-import { getProjectData } from '@/service/project';
+import { getNewProjects, getProjectData } from '@/service/project';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
@@ -48,4 +48,12 @@ export async function generateMetadata({
     title: `${project.title}`,
     description: `${project?.title} 상세 정보`,
   };
+}
+
+export async function generateStaticParams() {
+  const projects = await getNewProjects();
+
+  return projects.map((project) => ({
+    slug: project.path,
+  }));
 }
